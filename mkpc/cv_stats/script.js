@@ -13,6 +13,7 @@ const firstLog = document.getElementById("firstLog");
 const lastLog = document.getElementById("lastLog");
 const logList = document.getElementById("logList");
 
+const mkpcLink = 'https://mkpc.malahieude.net/'
 const logConsts = [
     ['✅', 'accepted', 'Accepted'],
     ['☑️', 'accepted with difficulty change', 'ChangedDifficulty'],
@@ -97,7 +98,10 @@ function displayStats(name, stats) {
         listItem.setAttribute("data-tooltip", `${logConsts[type][0]} ${name} ${logConsts[type][1]} "${text}"`);
 
         listItem.addEventListener("click", function() {
-            window.open(`https://mkpc.malahieude.net/${ref}`, '_blank');
+            if (ref.includes(mkpcLink))
+                window.open({ref}, '_blank');
+            else
+                window.open(`${mkpcLink}${ref}`, '_blank');
         });
 
         logList.appendChild(listItem);
