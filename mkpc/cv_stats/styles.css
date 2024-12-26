@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Box */
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+.container h5 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* CV list */
+select {
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Stat selection */
+.stats {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.stats h2 {
+    margin: 0 0 10px;
+}
+
+.stats p {
+    margin: 0 0 8px;
+}
+
+/* Log list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Hover log list */
+.hoverItem {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+}
+
+.hoverItem::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+.hoverItem:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

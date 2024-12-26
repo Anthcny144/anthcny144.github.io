@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge Validator stats</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Challenge Validator stats</h1>
+    <h5>Last updated: <span id="lastUpdated">-</span></h5>
+    <select id="cvList">
+      <option value="">-- Select a Challenge Validator --</option>
+    </select>
+    <div class="stats" id="statsDisplay" style="display: none;">
+      <h2 id="cvName"></h3>
+      <p>Number of logs: <span id="logCount">0</span></p>
+      <p>✅ Accepted: <span id="logAccepted">0</span></p>
+      <p>☑️ Changed difficulty: <span id="logChangedDifficulty">0</span></p>
+      <p>❌ Rejected: <span id="logRejected">0</span></p>
+      <p>🛠️ Updated: <span id="logUpdated">0</span></p>
+      <p>🍏 Reverted validation: <span id="logRevertedValidation">0</span></p>
+      <p>🍎 Reverted rejection: <span id="logRevertedRejection">0</span></p>
+      <p>💀 Banned member: <span id="logBannedMember">0</span></p>
+      <p>👼 Unbanned member: <span id="logUnbannedMember">0</span></p>
+      <p>🔁 Revalidated: <span id="logRevalidated">0</span></p>
+      <p><br></p>
+      
+      <h2>Activity</h2>
+      <p>Last activity: <span id="lastActivity">0</span></p>
+      <p>Logs per day: <span id="logsPerDay">0</span></p>
+      <p>Logs per day during activity: <span id="logsPerDayActivity">0</span></p>
+      <p>First log: <span id="firstLog">0</span></p>
+      <p>Latest log: <span id="lastLog">0</span></p>
+      <p><br></p>
+
+      <h2>List of logs</h2>
+      <ul id="logList"></ul>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
