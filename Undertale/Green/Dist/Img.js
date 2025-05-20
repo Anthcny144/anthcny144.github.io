@@ -11,5 +11,5 @@ export class Img {
         return Img.loaded[src];
     }
 }
-Img.path = "/Assets/Images/";
+Img.path = "./Assets/Images/";
 Img.loaded = {};

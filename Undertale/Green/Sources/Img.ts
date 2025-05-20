@@ -1,5 +1,5 @@
 export class Img {
-    public static path: string = "/Assets/Images/";
+    public static path: string = "./Assets/Images/";
     private static loaded: Record<string, HTMLImageElement> = {};
 
     public static load(src: string) {

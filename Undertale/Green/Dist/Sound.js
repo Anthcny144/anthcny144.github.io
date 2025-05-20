@@ -23,5 +23,5 @@ export class Sound {
         Sound.music.currentTime = 0;
     }
 }
-Sound.path = "/Assets/Audio/";
+Sound.path = "./Assets/Audio/";
 Sound.loaded = {};

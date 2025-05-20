@@ -1,5 +1,5 @@
 export class Sound {
-    public static path: string = "/Assets/Audio/";
+    public static path: string = "./Assets/Audio/";
     private static loaded: Record<string, HTMLAudioElement> = {};
     private static music?: HTMLAudioElement;
 
