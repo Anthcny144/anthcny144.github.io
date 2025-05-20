@@ -26,7 +26,7 @@ export class Render {
     }
     static loadFont(name) {
         if (!Render.fonts[name]) {
-            const font = new FontFace(name, "url(/Assets/Fonts/" + name + ".ttf)");
+            const font = new FontFace(name, "url(./Assets/Fonts/" + name + ".ttf)");
             Render.fonts[name] = font.load().then((loadedFont) => {
                 document.fonts.add(loadedFont);
                 return loadedFont;

@@ -167,7 +167,7 @@ export class Level {
             // import by file name
             else {
                 try {
-                    const res = yield fetch("/Waves/" + fileName);
+                    const res = yield fetch("./Waves/" + fileName);
                     const json = yield res.json();
                     const level = new Level(undefined, json);
                     Level.defaultWaves.push(level);
