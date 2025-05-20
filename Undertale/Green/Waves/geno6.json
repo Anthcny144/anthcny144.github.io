@@ -1,0 +1,22 @@
+{
+    "name": "Genocide 6th",
+    "author": "Anthcny",
+    "music": "mus_x_undyne.ogg",
+    "musicStart": 66.500,
+    "file": "geno6.json",
+    "loopDelay": false,
+    "arrows": [
+        [30, 0, [0], 6, false, 50, 0],
+        [35, 0, [3], 10, false, 50, 0],
+        [70, 0, [2], 6, false, 50, 0],
+        [75, 0, [1], 10, false, 50, 0],
+
+        [100, 0, [3], 6, false, 50, 0],
+        [140, 0, [1], 10, false, 50, 0],
+        [140, 0, [0], 3, false, 50, 0],
+
+        [170, 0, [3], 6, false, 50, 0],
+        [170, 0, [2], 3, false, 50, 0]
+    ],
+    "length": 250
+}

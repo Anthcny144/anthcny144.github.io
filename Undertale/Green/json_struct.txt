@@ -1,0 +1,57 @@
+{
+    "name": "Level name",
+    "author": "Level author",
+    "music": "File name in Assets/Musics",
+    "arrows": [
+        [frame, type, side, speed, fadeout, dmg, iframes],
+        ...
+    ]
+}
+
+frame:
+    VARIABLE: integer
+    DESC: The frame the arrow will spawn on, starts from 0, increases by 1 each frame (60 times per second)
+
+type:
+    VARIABLE: float
+    DESC: The probability for the arrow to be a reverse arrow (yellow arrow), 0.5 is 50%
+
+side:
+    VARIABLE: [integer, bool]
+    DESC: The side where the arrow will spawn on
+    1st arg:
+        0: Up
+        1: Right
+        2: Down
+        3: Left
+        null: Random side
+    2nd arg:
+        True to prevent the arrow to spawn on the same side as the previous arrow (for random sides only)
+
+speed:
+    VARIABLE: float
+    DESC: How much the arrow will travel per frame
+
+fadeout:
+    VARIABLE: bool
+    DESC: Whether the arrow should fade out when getting close to the player 
+
+dmg:
+    VARIABLE: integer
+    DESC: How much damage the arrow will deal upon contact (player has 100 HP)
+
+iframes:
+    VARIABLE: integer
+    DESC: Invincibility length in frame upon contact with player
+
+
+EXAMPLE:
+[10, 0.15, [null, true], 8, false, 10, 30]
+This data creates an arrow that:
+- spawns on frame 10
+- has 15% of being a reverse arrow
+- spawns on a random side that differes from the previous arrow's side
+- has a speed of 8
+- doesn't fade out
+- deals 10 HP upon contact
+- gives 30 invincibility frames (0.5s)

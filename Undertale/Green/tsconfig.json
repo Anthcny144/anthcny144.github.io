@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "Dist",
+    "target": "es2016",
+    "module": "es6",
+    "strict": true
+  }
+}

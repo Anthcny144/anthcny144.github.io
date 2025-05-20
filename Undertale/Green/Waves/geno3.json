@@ -1,0 +1,28 @@
+{
+    "name": "Genocide 3rd",
+    "author": "Anthcny",
+    "music": "mus_x_undyne.ogg",
+    "musicStart": 25.600,
+    "file": "geno3.json",
+    "loopDelay": false,
+    "arrows": [
+        [20, 0, [null, false], 2, false, 50, 0],
+        [35, 0, [null, false], 2, false, 50, 0],
+        [50, 0, [null, false], 2, false, 50, 0],
+        [65, 0, [null, false], 2, false, 50, 0],
+        [80, 0, [null, false], 2, false, 50, 0],
+        [95, 0, [null, false], 2, false, 50, 0],
+        [110, 0, [null, false], 2, false, 50, 0],
+        [125, 0, [null, false], 2, false, 50, 0],
+        [140, 0, [null, false], 2, false, 50, 0],
+        [155, 0, [null, false], 2, false, 50, 0],
+        [170, 0, [null, false], 2, false, 50, 0],
+        [185, 0, [null, false], 2, false, 50, 0],
+        [200, 0, [null, false], 2, false, 50, 0],
+        [215, 0, [null, false], 2, false, 50, 0],
+        [230, 0, [null, false], 2, false, 50, 0],
+        [245, 0, [null, false], 2, false, 50, 0],
+        [260, 0, [null, false], 2, false, 50, 0],
+        [275, 0, [null, false], 2, false, 50, 0]
+    ]
+}

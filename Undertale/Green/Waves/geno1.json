@@ -1,0 +1,24 @@
+{
+    "name": "Genocide 1st",
+    "author": "Anthcny",
+    "music": "mus_x_undyne.ogg",
+    "musicStart": 0,
+    "file": "geno1.json",
+    "loopDelay": false,
+    "arrows": [
+        [30, 0, [0], 3, false, 50, 0],
+        [65, 0, [0], 3, false, 50, 0],
+        [100, 0, [0], 3, false, 50, 0],
+
+        [180, 0, [1], 8, false, 50, 0],
+        [196, 0, [2], 8, false, 50, 0],
+        [212, 0, [3], 8, false, 50, 0],
+        [228, 0, [0], 8, false, 50, 0],
+        [244, 0, [3], 8, false, 50, 0],
+        [260, 0, [2], 8, false, 50, 0],
+        [276, 0, [1], 8, false, 50, 0],
+        [292, 0, [2], 8, false, 50, 0],
+        [308, 0, [3], 8, false, 50, 0],
+        [324, 0, [0], 8, false, 50, 0]
+    ]
+}
