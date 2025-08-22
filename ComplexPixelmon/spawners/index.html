@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Pixelmon Spawners</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Assets/icon.ico"/>
+</head>
+<body>
+    <div id="main_div">
+        <canvas id="map"></canvas>
+        <div id="right_div">
+            <div id="search_div">
+                <input id="search" type="text" placeholder="Search Pokémon..."/>
+                <select id="results" size="6"></select>
+            </div>
+
+            <select id="mons"></select>
+
+            <div id="title_div">
+                <img id="sprite" style="display: none">
+                <h2 id="name"></h2>
+            </div>
+        </div>
+    </div>
+    <strong><p id="bonus_info"></p></strong>
+
+    <script type="module" src="Dist/Main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "Dist",
+    "target": "es6",
+    "module": "es6",
+    "strict": true,
+    "lib": ["dom", "es2016"]
+  }
+}
