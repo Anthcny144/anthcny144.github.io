@@ -34,6 +34,10 @@ body {
     box-sizing: border-box;
 }
 
+#results {
+    display: none;
+}
+
 #title_div {
     display: flex;
     align-items: center;
