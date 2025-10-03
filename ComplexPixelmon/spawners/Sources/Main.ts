@@ -62,23 +62,18 @@ function filter() {
     const input = html_search.value;
     const filtered = Array.from(cmbbox.options).filter(m => m.value.toLowerCase().startsWith(input));
 
-    // reset options
+    // add filtered to select box
     html_results.innerHTML = "";
 
-    if (input === "") {
-        html_results.style.display = "none";
+    if (input === "")
         return;
-    }
-    
-    // add filtered to select box
+
     for (const result of filtered) {
         const opt = document.createElement("option");
         opt.value = result.value;
         opt.innerHTML = result.value; // find_bold(result.value, input);
         html_results.appendChild(opt);
     }
-
-    html_results.style.display = filtered.length > 0 ? "block" : "none";
 }
 
 function show_mon(event: Event) {
@@ -123,7 +118,7 @@ function show_mon(event: Event) {
         html_spawner.addEventListener("mouseenter", () => {
             html_spawner.style.color = "lime";
             html_bonus_info.innerHTML = (`📍 XYZ:&nbsp   ${spawn.spawner.pos.x}&nbsp   /&nbsp   ${spawn.spawner.pos.y}&nbsp   /&nbsp   ${spawn.spawner.pos.z}`) +
-                                          (spawn.spawner.in_cave ? "<br>ℹ️ This spawner is in a cave or under a roof" : "");
+                                          (spawn.spawner.in_cave ? "<br>🪨 This spawner is in a cave or under a roof" : "");
 
             const img = new Image();
             img.src = `./Assets/Biomes/${spawn.biome.name}.png`;
@@ -161,7 +156,7 @@ function show_mon(event: Event) {
     html_name.textContent = mon;
 
     // load sprite
-    html_sprite.src = `./Assets/Sprites/${mon.toLowerCase()}.png`;
+    html_sprite.src = `./Assets/Sprites/${mon}.png`;
     html_sprite.style.display = "block";
 }
 
@@ -219,7 +214,7 @@ function init(check_sprite_exists: boolean = false) {
         cmbbox.appendChild(opt);
 
         if (check_sprite_exists)
-            fetch(`./Assets/Sprites/${mon.toLowerCase()}.png`);
+            fetch(`./Assets/Sprites/${mon}.png`);
     }
     cmbbox.value = "-";
 }

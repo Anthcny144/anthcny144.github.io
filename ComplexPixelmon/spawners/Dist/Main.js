@@ -183,7 +183,3 @@ function loop() {
 }
 init();
 loop();
-/*
-TODO:
-- tool to show optimal spawners of bingo
-*/ 
