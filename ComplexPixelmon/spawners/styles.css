@@ -13,6 +13,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    height: 680px;
+    overflow-y: auto;
 }
 
 #map {
@@ -34,14 +37,31 @@ body {
     box-sizing: border-box;
 }
 
+#results, #mons {
+    text-align: center;
+}
+
 #results {
-    display: none;
+    height: 100px;
 }
 
 #title_div {
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 60px;
+    margin: 4px 0px 4px 0px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#title_div > h2 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 #sprite {
@@ -52,4 +72,5 @@ body {
 p {
     margin: 0px;
     user-select: none;
+    font-size: 14px;
 }
